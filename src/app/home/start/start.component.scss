@@ -1,0 +1,32 @@
+#start {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+
+  .doctors-image {
+    position: absolute;
+    bottom: 21px;
+    left: 36px;
+  }
+
+  .content {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    .content-container {
+      width: 60%;
+      margin: auto;
+
+      h1 {
+        margin-bottom: 48px;
+      }
+    }
+  }
+}

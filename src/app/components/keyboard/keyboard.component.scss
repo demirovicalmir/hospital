@@ -1,0 +1,41 @@
+#keyboard {
+  display: flex;
+  flex-direction: column;
+
+  .row {
+    display: flex;
+
+    .input {
+      flex: 1;
+      height: 103px;
+      margin: 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-size: 48px;
+      color: #3b413c;
+      border: 8px solid #9db5b2;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .input:hover {
+      border-color: transparent;
+      background-color: #019874;
+      color: white;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .submit {
+      background-color: #9db5b2;
+      color: white;
+      font-size: 32px;
+    }
+  }
+
+  .input:hover > img {
+    filter: invert(0%) sepia(70%) saturate(0%) hue-rotate(90deg)
+      brightness(110%) contrast(100%);
+  }
+}

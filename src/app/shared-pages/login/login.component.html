@@ -1,0 +1,30 @@
+<div id="check-in" class="bg-p">
+  <div class="loading-bar">
+    <app-loading-bar [steps]="3" [progress]="1"></app-loading-bar>
+  </div>
+
+  <div class="container">
+    <h1>{{ text }}</h1>
+
+    <div class="check-in-input">
+      <input
+        type="text"
+        [(ngModel)]="value"
+        [placeholder]="placeholder"
+        name="value"
+        maxlength="10"
+      />
+    </div>
+
+    <div class="keyboard">
+      <app-keyboard
+        (onInputUpdate)="onInputUpdate($event)"
+        (onSubmit)="onSubmit()"
+      ></app-keyboard>
+    </div>
+  </div>
+
+  <div id="back-button" (click)="goBack()">
+    <img src="../../assets/back.svg" alt="Back button" />
+  </div>
+</div>
